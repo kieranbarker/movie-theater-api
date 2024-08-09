@@ -1,5 +1,6 @@
 const express = require('express')
-const { User, Show } = require('../models/index.js')
+const { Show } = require('../models/index.js')
+
 const router = express.Router()
 
 // GET /shows

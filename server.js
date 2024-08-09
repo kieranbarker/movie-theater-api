@@ -1,12 +1,11 @@
 const express = require('express')
-const usersRouter = require('./routes/users.js')
-const showsRouter = require('./routes/shows.js')
+const routes = require('./routes/index.js')
+
 const app = express()
 
-// WRITE ROUTES
 app.use(express.json())
-app.use('/users', usersRouter)
-app.use('/shows', showsRouter)
+app.use('/users', routes.users)
+app.use('/shows', routes.shows)
 
 const port = 3000
 
