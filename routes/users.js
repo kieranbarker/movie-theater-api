@@ -28,7 +28,7 @@ router.get('/:userId/shows', async (req, res) => {
     return
   }
 
-  const shows = await user.getShows({})
+  const shows = await user.getShows()
   res.status(200).json(shows)
 })
 
